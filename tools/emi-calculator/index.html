@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calcukator - XtreamHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero-section">
+
+        <div class="container">
+
+            <div class="hero-grid">
+
+                <!-- Calculator -->
+                <div class="calculator-wrapper">
+
+                    <h1>EMI Loan Calculator</h1>
+
+                    <div class="card">
+
+                        <label>Loan Amount (₹)</label>
+                        <input type="number" id="loanAmount" placeholder="Enter Loan Amount">
+
+                        <label>Interest Rate (%)</label>
+                        <input type="number" id="interestRate" placeholder="Enter Interest Rate">
+
+                        <label>Loan Tenure (Years)</label>
+                        <input type="number" id="loanYears" placeholder="Enter Loan (Years)">
+
+                        <button id="calculateBtn">Calculate EMI</button>
+
+                        <div class="result">
+                            <h2>Monthly EMI</h2>
+                            <p id="emiResult">₹0</p>
+                        </div>
+
+                        <div class="result">
+
+                            <h2>Monthly EMI</h2>
+
+                            <p id="emiSummary">₹0</p>
+
+                            <hr>
+
+                            <div class="result-row">
+                                <span>Loan Amount</span>
+                                <strong id="loanAmountResult">₹0</strong>
+                            </div>
+
+                            <div class="result-row">
+                                <span>Interest Rate</span>
+                                <strong id="interestRateResult">0%</strong>
+                            </div>
+
+                            <div class="result-row">
+                                <span>Loan Tenure</span>
+                                <strong id="loanYearsResult">0 Years</strong>
+                            </div>
+
+                            <div class="result-row">
+                                <span>Total Interest</span>
+                                <strong id="totalInterestResult">₹0</strong>
+                            </div>
+
+                            <div class="result-row">
+                                <span>Total Payment</span>
+                                <strong id="totalPaymentResult">₹0</strong>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- Features -->
+                <div class="features">
+
+                    <h2>Why use our EMI Calculator?</h2>
+
+                    <div class="feature-grid">
+
+                        <div class="feature-card">
+                            <div class="icon">⚡</div>
+                            <h3>Instant Calculation</h3>
+                            <p>Calculate your monthly EMI instantly.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="icon">🎯</div>
+                            <h3>Accurate Results</h3>
+                            <p>Uses standard banking EMI formula.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="icon">📱</div>
+                            <h3>Mobile Friendly</h3>
+                            <p>Works on every device.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="icon">🔒</div>
+                            <h3>100% Secure</h3>
+                            <p>No data is stored.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="example-section">
+
+        <div class="container">
+
+            <h2>Example EMI Calculation</h2>
+
+            <div class="example-card">
+
+                <div class="row">
+                    <span>Loan Amount</span>
+                    <strong>₹5,00,000</strong>
+                </div>
+
+                <div class="row">
+                    <span>Interest Rate</span>
+                    <strong>9%</strong>
+                </div>
+
+                <div class="row">
+                    <span>Loan Tenure</span>
+                    <strong>5 Years</strong>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <span>Monthly EMI</span>
+                    <strong>₹10,379</strong>
+                </div>
+
+                <div class="row">
+                    <span>Total Interest</span>
+                    <strong>₹1,22,740</strong>
+                </div>
+
+                <div class="row">
+                    <span>Total Payment</span>
+                    <strong>₹6,22,740</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="formula-section">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>EMI Formula</h2>
+                <p>
+                    Our EMI Calculator uses the standard banking formula to calculate your monthly loan payment.
+                </p>
+            </div>
+
+            <div class="formula-card">
+                
+                <img src="assets/images/emi-formula.png" alt="EMI Formula" class="formula-image">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="faq-section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about EMI calculations.</p>
+            </div>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is EMI?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            EMI (Equated Monthly Installment) is the fixed amount you pay every month to repay your loan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How is EMI calculated?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            EMI is calculated using the standard banking formula based on loan amount, interest rate and tenure.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I repay my loan early?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. Most banks allow loan prepayment, but some may charge a prepayment fee.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is this EMI Calculator free?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. Our EMI Calculator is completely free to use.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    </section>
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How EMI Calculator Works?</h2>
+                <p>
+                    Our EMI Calculator uses the standard formula to calculate your monthly loan payment accurately.
+                </p>
+            </div>
+            <div class="work-grid">
+                <div class="work-card">
+                    <span>1️⃣</span>
+                    <h3>Enter Loan Amount</h3>
+                    <p>Enter the total amount you want to borrow from the bank.</p>
+                </div>
+                <div class="work-card">
+                    <span>2️⃣</span>
+                    <h3>Enter Interest Rate</h3>
+
+                    <p>
+                        Add the annual interest rate offered by your bank.
+                    </p>
+                </div>
+
+                <div class="work-card">
+                    <span>3️⃣</span>
+                    <h3>Select Loan Tenure</h3>
+
+                    <p>
+                        Choose the number of years for your loan repayment.
+                    </p>
+                </div>
+
+                <div class="work-card">
+                    <span>4️⃣</span>
+                    <h3>Get Instant EMI</h3>
+
+                    <p>
+                        Click Calculate EMI and get your monthly payment instantly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js">
+    </script>
+
+</body>
+</html>
