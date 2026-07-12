@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="hero-section">
+    <div class="hero-section">
 
         <div class="container">
 
@@ -75,47 +75,75 @@
                     </div>
 
                 </div>
+                <div class="analytics">
 
-                <!-- Features -->
-                <div class="features">
+                    <h2>Loan Analytics</h2>
 
-                    <h2>Why use our EMI Calculator?</h2>
+                    <div class="analytics-card">
 
-                    <div class="feature-grid">
+                        <canvas id="loanChart"></canvas>
 
-                        <div class="feature-card">
-                            <div class="icon">⚡</div>
-                            <h3>Instant Calculation</h3>
-                            <p>Calculate your monthly EMI instantly.</p>
-                        </div>
+                        <div class="analytics-info">
 
-                        <div class="feature-card">
-                            <div class="icon">🎯</div>
-                            <h3>Accurate Results</h3>
-                            <p>Uses standard banking EMI formula.</p>
-                        </div>
+                            <div class="analytics-row">
+                                <span>Monthly EMI</span>
+                                <strong id="analyticsEmi">₹0</strong>
+                            </div>
 
-                        <div class="feature-card">
-                            <div class="icon">📱</div>
-                            <h3>Mobile Friendly</h3>
-                            <p>Works on every device.</p>
-                        </div>
+                            <div class="analytics-row">
+                                <span>Total Interest</span>
+                                <strong id="interestSummary">₹0</strong>
+                            </div>
 
-                        <div class="feature-card">
-                            <div class="icon">🔒</div>
-                            <h3>100% Secure</h3>
-                            <p>No data is stored.</p>
+                            <div class="analytics-row">
+                                <span>Total Payment</span>
+                                <strong id="paymentSummary">₹0</strong>
+                            </div>
+
                         </div>
 
                     </div>
 
-                </div>
 
+                    <!-- Features -->
+                    <div class="features">
+
+                        <h2>Why use our EMI Calculator?</h2>
+
+                        <div class="feature-grid">
+
+                            <div class="feature-card">
+                                <div class="icon">⚡</div>
+                                <h3>Instant Calculation</h3>
+                                <p>Calculate your monthly EMI instantly.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="icon">🎯</div>
+                                <h3>Accurate Results</h3>
+                                <p>Uses standard banking EMI formula.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="icon">📱</div>
+                                <h3>Mobile Friendly</h3>
+                                <p>Works on every device.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="icon">🔒</div>
+                                <h3>100% Secure</h3>
+                                <p>No data is stored.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
-
-    </section>
+    </div>
     <section class="example-section">
 
         <div class="container">
@@ -172,9 +200,9 @@
             </div>
 
             <div class="formula-card">
+               
+                <img src="../../assets/images/emi-formula.png" alt="EMI Formula" class="formula-image">
                 
-                <img src="assets/images/emi-formula.png" alt="EMI Formula" class="formula-image">
-
             </div>
 
         </div>
@@ -294,7 +322,7 @@
             </div>
         </div>
     </section>
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js">
     </script>
 

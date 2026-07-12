@@ -139,6 +139,60 @@ button:hover{
     }
 
 }
+#loanChart{
+    max-width: 250px;
+    max-height: 250px;
+    margin:20px auto;
+}
+.analytics h2{
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.analytics-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.analytics-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:20px;
+
+    font-size:18px;
+
+}
+
+.analytics-row strong{
+
+    color:#2563eb;
+    font-size: 20px;
+
+}
+.analytics .features{
+    margin-top:40px;
+}
+
+.analytics .features h2{
+    text-align:left;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.analytics .feature-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
 
 /* end */
 #emiResult{
@@ -336,24 +390,31 @@ button:hover{
 
 }
 .formula-section{
-
     padding:90px 0;
-
 }
+
 .formula-card{
+    width:100%;
+    max-width:800px;
+    margin:auto;
+
     background:#fff;
-    padding:30px;
     border-radius:20px;
+
+    padding:30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-    text-align:center;
 }
 
 .formula-image{
-    width:100%;
-    max-width:900px;
+    width:420px;
+    max-width:100%px;
+    height:auto;
     display:block;
-    margin:auto;
-    border-radius:12px;
 }
 @media(max-width:768px){
 
