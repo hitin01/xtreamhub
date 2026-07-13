@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMI Calculator - XtreamHub</title>
+    <title>SIP Calculator - XtreamHub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,57 +16,57 @@
                 <!-- Calculator -->
                 <div class="calculator-wrapper">
 
-                    <h1>EMI Loan Calculator</h1>
+                    <h1>SIP Calculator</h1>
 
                     <div class="card">
 
-                        <label>Loan Amount (₹)</label>
-                        <input type="number" id="loanAmount" placeholder="Enter Loan Amount">
+                        <label>Monthly Investment (₹)</label>
+                        <input type="number" id="monthlyInvestment" placeholder="Enter Monthly Investment">
 
-                        <label>Interest Rate (%)</label>
-                        <input type="number" id="interestRate" placeholder="Enter Interest Rate">
+                        <label>Expected Return (%)</label>
+                        <input type="number" id="expectedReturn" placeholder="Expected Annual Return">
 
-                        <label>Loan Tenure (Years)</label>
-                        <input type="number" id="loanYears" placeholder="Enter Loan (Years)">
+                        <label>Investment Period (Years)</label>
+                        <input type="number" id="investmentYears" placeholder="Investment Years">
 
-                        <button id="calculateBtn">Calculate EMI</button>
+                        <button id="calculateBtn">Calculate SIP</button>
 
                         <div class="result">
-                            <h2>Monthly EMI</h2>
-                            <p id="emiResult">₹0</p>
+                            <h2>Estimated Value</h2>
+                            <p id="sipResult">₹0</p>
                         </div>
 
                         <div class="result">
 
                             <h2>Monthly EMI</h2>
 
-                            <p id="emiSummary">₹0</p>
+                            <p id="sipSummary">₹0</p>
 
                             <hr>
 
                             <div class="result-row">
-                                <span>Loan Amount</span>
-                                <strong id="loanAmountResult">₹0</strong>
+                                <span>Monthly Investment</span>
+                                <strong id="investmentResult">₹0</strong>
                             </div>
 
                             <div class="result-row">
-                                <span>Interest Rate</span>
-                                <strong id="interestRateResult">0%</strong>
+                                <span>Expected Returns</span>
+                                <strong id="returnRateResult">0%</strong>
                             </div>
 
                             <div class="result-row">
-                                <span>Loan Tenure</span>
-                                <strong id="loanYearsResult">0 Years</strong>
+                                <span>Investment Years</span>
+                                <strong id="yearsResult">0 Years</strong>
                             </div>
 
                             <div class="result-row">
-                                <span>Total Interest</span>
-                                <strong id="totalInterestResult">₹0</strong>
+                                <span>Estimated Returns</span>
+                                <strong id="estimatedReturnsResult">₹0</strong>
                             </div>
 
                             <div class="result-row">
-                                <span>Total Payment</span>
-                                <strong id="totalPaymentResult">₹0</strong>
+                                <span>Maturity Value</span>
+                                <strong id="maturityValueResult">₹0</strong>
                             </div>
 
                         </div>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="analytics">
 
-                    <h2>Loan Analytics</h2>
+                    <h2>SIP Analytics</h2>
 
                     <div class="analytics-card">
 
@@ -86,18 +86,18 @@
                         <div class="analytics-info">
 
                             <div class="analytics-row">
-                                <span>Monthly EMI</span>
-                                <strong id="analyticsEmi">₹0</strong>
+                                <span>Maturity Value</span>
+                                <strong id="analyticsSip">₹0</strong>
                             </div>
 
                             <div class="analytics-row">
-                                <span>Total Interest</span>
-                                <strong id="interestSummary">₹0</strong>
+                                <span>Estimated Returns</span>
+                                <strong id="returnsSummary">₹0</strong>
                             </div>
 
                             <div class="analytics-row">
-                                <span>Total Payment</span>
-                                <strong id="paymentSummary">₹0</strong>
+                                <span>Total Investment</span>
+                                <strong id="maturitySummary">₹0</strong>
                             </div>
 
                         </div>
@@ -108,20 +108,20 @@
                     <!-- Features -->
                     <div class="features">
 
-                        <h2>Why use our EMI Calculator?</h2>
+                        <h2>Why use our SIP Calculator?</h2>
 
                         <div class="feature-grid">
 
                             <div class="feature-card">
                                 <div class="icon">⚡</div>
                                 <h3>Instant Calculation</h3>
-                                <p>Calculate your monthly EMI instantly.</p>
+                                <p>Calculate your SIP maturity instantly.</p>
                             </div>
 
                             <div class="feature-card">
                                 <div class="icon">🎯</div>
                                 <h3>Accurate Results</h3>
-                                <p>Uses standard banking EMI formula.</p>
+                                <p>Uses standard maturity SIP formula.</p>
                             </div>
 
                             <div class="feature-card">
@@ -148,40 +148,40 @@
 
         <div class="container">
 
-            <h2>Example EMI Calculation</h2>
+            <h2>Example SIP Calculation</h2>
 
             <div class="example-card">
 
                 <div class="row">
-                    <span>Loan Amount</span>
-                    <strong>₹5,00,000</strong>
+                    <span>Monthly Investment</span>
+                    <strong>₹5,000</strong>
                 </div>
 
                 <div class="row">
-                    <span>Interest Rate</span>
-                    <strong>9%</strong>
+                    <span>Expected Returns</span>
+                    <strong>12%</strong>
                 </div>
 
                 <div class="row">
-                    <span>Loan Tenure</span>
-                    <strong>5 Years</strong>
+                    <span>Investment Years</span>
+                    <strong>10 Years</strong>
                 </div>
 
                 <hr>
 
                 <div class="row">
-                    <span>Monthly EMI</span>
-                    <strong>₹10,379</strong>
+                    <span>Total Investment</span>
+                    <strong>₹6,00,000</strong>
                 </div>
 
                 <div class="row">
-                    <span>Total Interest</span>
-                    <strong>₹1,22,740</strong>
+                    <span>Estimated Returns</span>
+                    <strong>₹5,61,695</strong>
                 </div>
 
                 <div class="row">
-                    <span>Total Payment</span>
-                    <strong>₹6,22,740</strong>
+                    <span>Maturity Value</span>
+                    <strong>₹11,61,695</strong>
                 </div>
 
             </div>
@@ -193,15 +193,15 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>EMI Formula</h2>
+                <h2>SIP Formula</h2>
                 <p>
-                    Our EMI Calculator uses the standard banking formula to calculate your monthly loan payment.
+                    Our SIP Calculator uses the compound interest formula to calculate your investment maturity value.
                 </p>
             </div>
 
             <div class="formula-card">
                
-                <img src="../../assets/images/emi-formula.png" alt="EMI Formula" class="formula-image">
+                <img src="../../assets/images/sip-image.png" alt="SIP Formula" class="formula-image">
                 
             </div>
 
@@ -222,52 +222,53 @@
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        What is EMI?
+                        What is SIP?
                         <span>+</span>
                     </button>
 
                     <div class="faq-answer">
                         <p>
-                            EMI (Equated Monthly Installment) is the fixed amount you pay every month to repay your loan.
+                            SIP (Systematic Investment Plan) is a simple way to invest a fixed amount of money regularly in mutual funds. It helps you build wealth over time through disciplined investing and the power of compounding.
+                        </p>
+                            
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How does the SIP Calculator works?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            The SIP Calculator estimates the future value of your investment based on your monthly investment amount, expected annual return, and investment period. It uses the standard compound interest formula to calculate your estimated maturity value.
                         </p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        How is EMI calculated?
+                        Is SIP better than FD?
                         <span>+</span>
                     </button>
 
                     <div class="faq-answer">
-                        <p>
-                            EMI is calculated using the standard banking formula based on loan amount, interest rate and tenure.
+                       <p>
+                            SIP and Fixed Deposits (FDs) serve different financial goals. SIPs have the potential to generate higher long-term returns but are subject to market risks. FDs offer fixed and guaranteed returns with lower risk. Choose the option that best matches your financial goals and risk tolerance.
                         </p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        Can I repay my loan early?
+                        Can I stop SIP anytime?
                         <span>+</span>
                     </button>
 
                     <div class="faq-answer">
-                        <p>
-                            Yes. Most banks allow loan prepayment, but some may charge a prepayment fee.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Is this EMI Calculator free?
-                        <span>+</span>
-                    </button>
-
-                    <div class="faq-answer">
-                        <p>
-                            Yes. Our EMI Calculator is completely free to use.
+                       <p>
+                            Yes. Most SIP investments can be stopped, paused, or modified at any time without any penalty. However, the value of your investment depends on market performance at the time of withdrawal.
                         </p>
                     </div>
                 </div>
@@ -282,41 +283,41 @@
     <section class="how-it-works">
         <div class="container">
             <div class="section-title">
-                <h2>How EMI Calculator Works?</h2>
+                <h2>How SIP Calculator Works?</h2>
                 <p>
-                    Our EMI Calculator uses the standard formula to calculate your monthly loan payment accurately.
+                    Our SIP Calculator estimates your future investment value using the standard compound interest formula.
                 </p>
             </div>
             <div class="work-grid">
                 <div class="work-card">
                     <span>1️⃣</span>
-                    <h3>Enter Loan Amount</h3>
-                    <p>Enter the total amount you want to borrow from the bank.</p>
+                    <h3>Enter Monthly Investment</h3>
+                    <p>Enter the amount you want to invest every month through SIP..</p>
                 </div>
                 <div class="work-card">
                     <span>2️⃣</span>
-                    <h3>Enter Interest Rate</h3>
+                    <h3>Enter Expected Return</h3>
 
                     <p>
-                        Add the annual interest rate offered by your bank.
+                        Provide the expected annual return percentage for your investment..
                     </p>
                 </div>
 
                 <div class="work-card">
                     <span>3️⃣</span>
-                    <h3>Select Loan Tenure</h3>
+                    <h3>Choose Investment Period</h3>
 
                     <p>
-                        Choose the number of years for your loan repayment.
+                        Select how many years you plan to continue your SIP investment..
                     </p>
                 </div>
 
                 <div class="work-card">
                     <span>4️⃣</span>
-                    <h3>Get Instant EMI</h3>
+                    <h3>View Estimated Value</h3>
 
                     <p>
-                        Click Calculate EMI and get your monthly payment instantly.
+                        Click Calculate SIP to see your maturity value, total investment, and estimated returns instantly.
                     </p>
                 </div>
             </div>
@@ -333,9 +334,9 @@
 
         <div class="tools-grid">
 
-            <a href="../sip-calculator/index.html" class="tool-card">
+            <a href="../emi-calculator/index.html" class="tool-card">
                 <div class="tool-icon">📈</div>
-                <h3>SIP Calculator</h3>
+                <h3>EMI Calculator</h3>
                 <p>Calculate your SIP investment returns instantly.</p>
             </a>
 
