@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIP Calculator - XtreamHub</title>
+    <title>FD Calculator - XtreamHub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,57 +16,57 @@
                 <!-- Calculator -->
                 <div class="calculator-wrapper">
 
-                    <h1>SIP Calculator</h1>
+                    <h1>FD Calculator</h1>
 
                     <div class="card">
 
-                        <label>Monthly Investment (₹)</label>
-                        <input type="number" id="monthlyInvestment" placeholder="Enter Monthly Investment">
+                        <label>Deposit Amount (₹)</label>
+                        <input type="number" id="depositAmount" placeholder="Enter Deposit Amount">
 
-                        <label>Expected Return (%)</label>
-                        <input type="number" id="expectedReturn" placeholder="Expected Annual Return">
+                        <label>Interest Rate (%)</label>
+                        <input type="number" id="fdInterestRate" placeholder="Enter Interest Rate">
 
-                        <label>Investment Period (Years)</label>
-                        <input type="number" id="investmentYears" placeholder="Investment Years">
+                        <label>Deposit Tenure (Years)</label>
+                        <input type="number" id="fdYears" placeholder="Enter Deposit Period">
 
-                        <button id="calculateBtn">Calculate SIP</button>
+                        <button id="calculateBtn">Calculate FD</button>
 
                         <div class="result">
-                            <h2>Estimated Value</h2>
-                            <p id="sipResult">₹0</p>
+                            <h2>Maturity Amount</h2>
+                            <p id="fdResult">₹0</p>
                         </div>
 
                         <div class="result">
 
-                            <h2>Monthly EMI</h2>
+                            <h2>FD Summary </h2>
 
-                            <p id="sipSummary">₹0</p>
+                            <p id="fdSummary">₹0</p>
 
                             <hr>
 
                             <div class="result-row">
-                                <span>Monthly Investment</span>
-                                <strong id="investmentResult">₹0</strong>
+                                <span>Deposit Amount</span>
+                                <strong id="depositAmountResult">₹0</strong>
                             </div>
 
                             <div class="result-row">
-                                <span>Expected Returns</span>
-                                <strong id="returnRateResult">0%</strong>
+                                <span>Interest Rate</span>
+                                <strong id="fdInterestRateResult">0%</strong>
                             </div>
 
                             <div class="result-row">
-                                <span>Investment Years</span>
-                                <strong id="yearsResult">0 Years</strong>
+                                <span>Deposit Period</span>
+                                <strong id="fdYearsResult">0 Years</strong>
                             </div>
 
                             <div class="result-row">
-                                <span>Estimated Returns</span>
-                                <strong id="estimatedReturnsResult">₹0</strong>
+                                <span>Interest Earned</span>
+                                <strong id="interestEarnedResult">₹0</strong>
                             </div>
 
                             <div class="result-row">
-                                <span>Maturity Value</span>
-                                <strong id="maturityValueResult">₹0</strong>
+                                <span>Maturity Amount</span>
+                                <strong id="maturityAmountResult">₹0</strong>
                             </div>
 
                         </div>
@@ -77,26 +77,26 @@
                 </div>
                 <div class="analytics">
 
-                    <h2>SIP Analytics</h2>
+                    <h2>FD Analytics</h2>
 
                     <div class="analytics-card">
 
-                        <canvas id="loanChart"></canvas>
+                        <canvas id="fdChart"></canvas>
 
                         <div class="analytics-info">
 
                             <div class="analytics-row">
-                                <span>Maturity Value</span>
-                                <strong id="analyticsSip">₹0</strong>
+                                <span>Deposit Amount</span>
+                                <strong id="analyticsDeposit">₹0</strong>
                             </div>
 
                             <div class="analytics-row">
-                                <span>Estimated Returns</span>
-                                <strong id="returnsSummary">₹0</strong>
+                                <span>Interest Earned</span>
+                                <strong id="interestSummary">₹0</strong>
                             </div>
 
                             <div class="analytics-row">
-                                <span>Total Investment</span>
+                                <span>Maturity Amount</span>
                                 <strong id="maturitySummary">₹0</strong>
                             </div>
 
@@ -108,20 +108,20 @@
                     <!-- Features -->
                     <div class="features">
 
-                        <h2>Why use our SIP Calculator?</h2>
+                        <h2>Why use our FD Calculator?</h2>
 
                         <div class="feature-grid">
 
                             <div class="feature-card">
                                 <div class="icon">⚡</div>
                                 <h3>Instant Calculation</h3>
-                                <p>Calculate your SIP maturity instantly.</p>
+                                <p>Calculate your FD maturity instantly.</p>
                             </div>
 
                             <div class="feature-card">
                                 <div class="icon">🎯</div>
                                 <h3>Accurate Results</h3>
-                                <p>Uses standard maturity SIP formula.</p>
+                                <p>Uses standard Fixed Deposit formula.</p>
                             </div>
 
                             <div class="feature-card">
@@ -148,42 +148,40 @@
 
         <div class="container">
 
-            <h2>Example SIP Calculation</h2>
+            <h2>Example FD Calculation</h2>
 
             <div class="example-card">
 
-                <div class="row">
-                    <span>Monthly Investment</span>
-                    <strong>₹5,000</strong>
+                <div class="example-card">
+
+                    <div class="row">
+                        <span>Deposit Amount</span>
+                        <strong>₹1,00,000</strong>
+                    </div>
+
+                    <div class="row">
+                        <span>Interest Rate</span>
+                        <strong>7%</strong>
+                    </div>
+
+                    <div class="row">
+                        <span>Deposit Period</span>
+                        <strong>5 Years</strong>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <span>Interest Earned</span>
+                        <strong>₹40,255</strong>
+                    </div>
+
+                    <div class="row">
+                        <span>Maturity Amount</span>
+                        <strong>₹1,40,255</strong>
+                    </div>
+
                 </div>
-
-                <div class="row">
-                    <span>Expected Returns</span>
-                    <strong>12%</strong>
-                </div>
-
-                <div class="row">
-                    <span>Investment Years</span>
-                    <strong>10 Years</strong>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                    <span>Total Investment</span>
-                    <strong>₹6,00,000</strong>
-                </div>
-
-                <div class="row">
-                    <span>Estimated Returns</span>
-                    <strong>₹5,61,695</strong>
-                </div>
-
-                <div class="row">
-                    <span>Maturity Value</span>
-                    <strong>₹11,61,695</strong>
-                </div>
-
             </div>
 
         </div>
@@ -193,15 +191,16 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>SIP Formula</h2>
+                <h2>FD Formula</h2>
                 <p>
-                    Our SIP Calculator uses the compound interest formula to calculate your investment maturity value.
+                    Our FD Calculator uses the standard compound interest formula to estimate your maturity amount.
+                    
                 </p>
             </div>
 
             <div class="formula-card">
                
-                <img src="../../assets/images/sip-image.png" alt="SIP Formula" class="formula-image">
+                <img src="../../assets/images/fd-formula.png" alt="FD Formula" class="formula-image">
                 
             </div>
 
@@ -215,60 +214,59 @@
 
             <div class="section-title">
                 <h2>Frequently Asked Questions</h2>
-                <p>Everything you need to know about EMI calculations.</p>
+                <p>Everything you need to know about FD calculations.</p>
             </div>
 
             <div class="faq-container">
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        What is SIP?
+                        What is Fixed Deposit (FD)?
                         <span>+</span>
                     </button>
 
                     <div class="faq-answer">
                         <p>
-                            SIP (Systematic Investment Plan) is a simple way to invest a fixed amount of money regularly in mutual funds. It helps you build wealth over time through disciplined investing and the power of compounding.
+                             A Fixed Deposit (FD) is an investment offered by banks where you deposit a fixed amount for a fixed period and earn guaranteed interest.
                         </p>
-                            
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        How does the SIP Calculator works?
+                         How does the FD Calculator work?
                         <span>+</span>
                     </button>
 
                     <div class="faq-answer">
                         <p>
-                            The SIP Calculator estimates the future value of your investment based on your monthly investment amount, expected annual return, and investment period. It uses the standard compound interest formula to calculate your estimated maturity value.
+                            The calculator estimates your maturity amount using the deposit amount, interest rate, investment period and compound interest formula.
                         </p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        Is SIP better than FD?
+                       Is Fixed Deposit safe?
                         <span>+</span>
                     </button>
 
                     <div class="faq-answer">
-                       <p>
-                            SIP and Fixed Deposits (FDs) serve different financial goals. SIPs have the potential to generate higher long-term returns but are subject to market risks. FDs offer fixed and guaranteed returns with lower risk. Choose the option that best matches your financial goals and risk tolerance.
+                        <p>
+                             Yes. Fixed Deposits are considered one of the safest investment options because they provide fixed and predictable returns.
                         </p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        Can I stop SIP anytime?
+                        Can I withdraw my FD before maturity?
                         <span>+</span>
                     </button>
 
                     <div class="faq-answer">
-                       <p>
-                            Yes. Most SIP investments can be stopped, paused, or modified at any time without any penalty. However, the value of your investment depends on market performance at the time of withdrawal.
+                        <p>
+                            Yes. Most banks allow premature withdrawal, but an interest penalty may apply depending on the bank's policy.
                         </p>
                     </div>
                 </div>
@@ -283,41 +281,41 @@
     <section class="how-it-works">
         <div class="container">
             <div class="section-title">
-                <h2>How SIP Calculator Works?</h2>
+                <h2>How FD Calculator Works?</h2>
                 <p>
-                    Our SIP Calculator estimates your future investment value using the standard compound interest formula.
+                    Our FD Calculator estimates your maturity amount using the standard compound interest formula.
                 </p>
             </div>
             <div class="work-grid">
                 <div class="work-card">
                     <span>1️⃣</span>
-                    <h3>Enter Monthly Investment</h3>
-                    <p>Enter the amount you want to invest every month through SIP..</p>
+                    <h3>Enter Deposit Amount</h3>
+                    <p>Enter the amount you want to invest as a Fixed Deposit.</p>
                 </div>
                 <div class="work-card">
                     <span>2️⃣</span>
-                    <h3>Enter Expected Return</h3>
+                    <h3>Enter Interest Rate</h3>
 
                     <p>
-                        Provide the expected annual return percentage for your investment..
+                        Provide the annual interest rate offered by your bank.
                     </p>
                 </div>
 
                 <div class="work-card">
                     <span>3️⃣</span>
-                    <h3>Choose Investment Period</h3>
+                    <h3>Select Deposit Period</h3>
 
                     <p>
-                        Select how many years you plan to continue your SIP investment..
+                        Choose the number of years for your Fixed Deposit.
                     </p>
                 </div>
 
                 <div class="work-card">
                     <span>4️⃣</span>
-                    <h3>View Estimated Value</h3>
+                    <h3>View Maturity Amount</h3>
 
                     <p>
-                        Click Calculate SIP to see your maturity value, total investment, and estimated returns instantly.
+                       Click Calculate FD to instantly view your maturity amount and interest earned.
                     </p>
                 </div>
             </div>
@@ -334,16 +332,16 @@
 
         <div class="tools-grid">
 
-            <a href="../emi-calculator/index.html" class="tool-card">
+            <a href="../sip-calculator/index.html" class="tool-card">
                 <div class="tool-icon">📈</div>
-                <h3>EMI Calculator</h3>
-                <p>Calculate your Emi for exact amount of loans.</p>
+                <h3>SIP Calculator</h3>
+                <p>Calculate your SIP investment returns instantly.</p>
             </a>
 
-            <a href="../fd-calculator/index.html" class="tool-card">
+            <a href="../emi-calculator/index.html" class="tool-card">
                 <div class="tool-icon">🏦</div>
-                <h3>FD Calculator</h3>
-                <p>Estimate fixed deposit maturity amount.</p>
+                <h3>EMI Calculator</h3>
+                <p>Calculate your Emi for exact amount of loans.</p>
             </a>
 
             <a href="../gst-calculator/index.html" class="tool-card">
