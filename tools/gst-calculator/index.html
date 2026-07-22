@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator - XtreamHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-section">
+
+        <div class="container">
+
+            <div class="hero-grid">
+
+                <!-- Calculator -->
+                <div class="calculator-wrapper">
+
+                    <h1>GST Calculator</h1>
+
+                    <div class="card">
+
+                        <label>Original Amount (₹)</label>
+                        <input type="number" id="originalAmount" placeholder="Enter Amount">
+
+                        <label>GST Rate (%)</label>
+                        <input type="number" id="gstRate" placeholder="Enter GST Rate">
+
+                        <button id="calculateBtn">Calculate GST</button>
+
+                        <div class="result">
+                            <h2>Final Amount</h2>
+                            <p id="finalAmount">₹0</p>
+                        </div>
+
+                        <div class="result">
+
+                            <h2>GST Summary</h2>
+
+                            <p id="finalSummary">₹0</p>
+
+                            <hr>
+
+                            <div class="result-row">
+                                <span>Original Amount</span>
+                                <strong id="originalAmountResult">₹0</strong>
+                            </div>
+
+                            <div class="result-row">
+                                <span>GST Rate</span>
+                                <strong id="gstRateResult">0%</strong>
+                            </div>
+
+                            <div class="result-row">
+                                <span>GST Amount</span>
+                                <strong id="gstAmountResult">₹0</strong>
+                            </div>
+
+                            <div class="result-row">
+                                <span>Final Amount</span>
+                                <strong id="finalAmountResult">₹0</strong>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="analytics">
+
+                    <h2>GST Analytics</h2>
+
+                    <div class="analytics-card">
+
+                        <canvas id="gstChart"></canvas>
+
+                        <div class="analytics-info">
+
+                            <div class="analytics-row">
+                                <span>Original Amount</span>
+                                <strong id="analyticsAmount">₹0</strong>
+                            </div>
+
+                            <div class="analytics-row">
+                                <span>GST Amount</span>
+                                <strong id="analyticsGST">₹0</strong>
+                            </div>
+
+                            <div class="analytics-row">
+                                <span>Final Amount</span>
+                                <strong id="analyticsFinal">₹0</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Features -->
+                    <div class="features">
+
+                        <h2>Why use our GST Calculator?</h2>
+
+                        <div class="feature-grid">
+
+                            <div class="feature-card">
+                                <div class="icon">⚡</div>
+                                <h3>Calculate GST instantly</h3>
+                                <p>Calculate your GST instantly.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="icon">🎯</div>
+                                <h3>Accurate Results</h3>
+                                <p>Accurate GST Calculation.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="icon">📱</div>
+                                <h3>Mobile Friendly</h3>
+                                <p>Works on every device.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="icon">🔒</div>
+                                <h3>100% Secure</h3>
+                                <p>No data is stored.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section class="example-section">
+
+        <div class="container">
+
+            <h2>Example GST Calculation</h2>
+
+            <div class="example-card">
+
+                <div class="row">
+                    <span>Original Amount</span>
+                    <strong>₹1000</strong>
+                </div>
+
+                <div class="row">
+                    <span>GST Rate</span>
+                    <strong>18%</strong>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <span>GST Amount</span>
+                    <strong>₹180</strong>
+                </div>
+
+                <div class="row">
+                    <span>Final Amount</span>
+                    <strong>₹1,180</strong>
+                </div>
+
+            </div>
+               
+
+        </div>
+
+    </section>
+    <section class="formula-section">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>GST Formula</h2>
+                <p>
+                   Our GST Calculator uses the standard GST formula to calculate the GST amount and the final amount instantly. Simply enter the original amount and GST rate to get fast, accurate, and error-free results.
+                </p>
+            </div>
+
+            <div class="formula-card">
+               
+                <img src="../../assets/images/gst-formula.png" alt="EMI Formula" class="formula-image">
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="faq-section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about GST calculations.</p>
+            </div>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is GST?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            GST (Goods and Services Tax) is an indirect tax applied on the supply of goods and services. It replaces multiple indirect taxes with a single tax system.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How is GST calculated?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                             GST is calculated by multiplying the original amount by the GST rate and dividing the result by 100.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I remove GST from a price?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                             Yes. A GST Calculator can also calculate the original amount from a GST-inclusive price by removing the GST percentage.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is this GST Calculator free?
+                        <span>+</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. Our GST Calculator is completely free to use on any device without registration.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    </section>
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How GST Calculator Works?</h2>
+                <p>
+                     Our GST Calculator uses the standard GST formula to calculate the GST amount and final payable amount instantly.
+                </p>
+            </div>
+            <div class="work-grid">
+                <div class="work-card">
+                    <span>1️⃣</span>
+                    <h3>Enter Original Amount</h3>
+                    <p>Enter the original price of the product or service before GST is applied.</p>
+                </div>
+                <div class="work-card">
+                    <span>2️⃣</span>
+                    <h3>Enter GST Rate</h3>
+
+                    <p>
+                        Select or enter the applicable GST percentage such as 5%, 12%, 18%, or 28%.
+                    </p>
+                </div>
+
+                <div class="work-card">
+                    <span>3️⃣</span>
+                    <h3>Calculate GST</h3>
+
+                    <p>
+                         Click the <strong>Calculate GST</strong> button to instantly calculate the GST amount.
+                    </p>
+                </div>
+
+                <div class="work-card">
+                    <span>4️⃣</span>
+                    <h3> View GST Amount & Final Amount</h3>
+
+                    <p>
+                        Instantly see the GST amount and the final amount including GST.                    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="related-tools">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Related Financial Tools</h2>
+            <p>Explore more free financial calculators from XtreamHub.</p>
+        </div>
+
+        <div class="tools-grid">
+
+            <a href="../sip-calculator/index.html" class="tool-card">
+                <div class="tool-icon">📈</div>
+                <h3>SIP Calculator</h3>
+                <p>Calculate your SIP investment returns instantly.</p>
+            </a>
+
+            <a href="../fd-calculator/index.html" class="tool-card">
+                <div class="tool-icon">🏦</div>
+                <h3>FD Calculator</h3>
+                <p>Estimate fixed deposit maturity amount.</p>
+            </a>
+
+            <a href="../gst-calculator/index.html" class="tool-card">
+                <div class="tool-icon">🧾</div>
+                <h3>GST Calculator</h3>
+                <p>Add or remove GST in one click.</p>
+            </a>
+
+            <a href="../percentage-calculator/index.html" class="tool-card">
+                <div class="tool-icon">%</div>
+                <h3>Percentage Calculator</h3>
+                <p>Quickly calculate percentages and changes.</p>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js">
+    </script>
+
+</body>
+</html>
