@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image to PDF - XtreamHub</title>
     <link rel="stylesheet" href="style.css">
-    //pdf library
+    <!-- pdf library -->
     <script src="https://unpkg.com/pdf-lib"></script>
-    //sortable js
+    <!-- sortable js -->
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
                 Fast, secure and works directly in your browser.
             </p>
         </div>
-        //upload card
+        <!-- upload card -->
         <div class="card upload-card">
             <div class="drop-area" id="dropArea">
                 <div class="upload-icon">📂</div>
@@ -28,7 +28,7 @@
                 <p>or</p>
                 <input
                     type="file"
-                    id=""imageInput
+                    id="imageInput"
                     accept="image/*"
                     multiple
                     hidden
@@ -38,20 +38,20 @@
                     </button>
             </div>
         </div>
-        //preiview section
+        <!-- preiview section -->
 
         <div class="card">
             <div class="section-title">
                 Selected Images
             </div>
 
-            <div class="previewImages">
+            <div id="previewContainer">
 
             </div>
         </div>
 
-        //settings 
-        <div class="card-settings">
+        <!-- settings  -->
+        <div class="card setting">
             <div class="setting">
                 <label>Page Size</label>
                 <select id="pageSize">
