@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to PDF - XtreamHub</title>
+    <link rel="stylesheet" href="style.css">
+    //pdf library
+    <script src="https://unpkg.com/pdf-lib"></script>
+    //sortable js
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="hero">
+            <h1>Image to Pdf</h1>
+            <p>
+                Convert JPG, PNG and WEBP images into a single PDF.
+                Fast, secure and works directly in your browser.
+            </p>
+        </div>
+        //upload card
+        <div class="card upload-card">
+            <div class="drop-area" id="dropArea">
+                <div class="upload-icon">📂</div>
+                <h2>Drag & Drop Images</h2>
+                <p>or</p>
+                <input
+                    type="file"
+                    id=""imageInput
+                    accept="image/*"
+                    multiple
+                    hidden
+                    >
+                    <button id="browseBtn">
+                        Choose Images
+                    </button>
+            </div>
+        </div>
+        //preiview section
+
+        <div class="card">
+            <div class="section-title">
+                Selected Images
+            </div>
+
+            <div class="previewImages">
+
+            </div>
+        </div>
+
+        //settings 
+        <div class="card-settings">
+            <div class="setting">
+                <label>Page Size</label>
+                <select id="pageSize">
+                    <option>A4</option>
+                    <option>Letter</option>
+                </select>
+            </div>
+
+            <div class="Settings">
+                <label>Orientation</label>
+
+                <select id="orientation">
+                    <option>Portrait</option>
+                    <option>Landscape</option>
+                </select>
+            </div>
+            <div class="setting">
+                <label>Margin</label>
+                <select id="margin">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+            <div class="setting">
+                <label>Image Quality</label>
+                <select id="quality">
+                    <option>High</option>
+                    <option>Medium</option>
+                    <option>Low</option>
+                </select>
+            </div>    
+
+        </div>
+        <div class="convert-area">
+            <button id="convertBtn">
+                Convert to Pdf
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
